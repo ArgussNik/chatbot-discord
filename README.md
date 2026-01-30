@@ -1,136 +1,192 @@
-# 🤖 Chatbot Discord com Respostas Inteligentes
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Discord com Respostas Inteligentes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-Bot Discord desenvolvido em Python com sistema de perguntas frequentes e respostas personalizadas para servidores.
+<h1>🤖 Chatbot Discord com Respostas Inteligentes</h1>
 
-## 📋 Sobre o Projeto
+<p>
+    Bot Discord desenvolvido em <strong>Python</strong> com sistema de perguntas frequentes (FAQ) e respostas personalizadas,
+    ideal para servidores que buscam organização, automação e interação inteligente com os membros.
+</p>
 
-Este é um chatbot completo para Discord que permite interação natural com usuários através de comandos e menções. O bot foi desenvolvido com foco em facilidade de uso e personalização.
+<hr>
 
-## ✨ Funcionalidades
+<h2>📋 Sobre o Projeto</h2>
 
-- 💬 Respostas automáticas para perguntas frequentes
-- 🎯 Sistema de comandos customizáveis
-- 🔔 Responde quando mencionado no servidor
-- 📝 Interface amigável com embeds formatados
-- 🛡️ Sistema de permissões para administradores
-- ⚙️ FAQ dinâmico que pode ser atualizado em tempo real
+<p>
+    Este projeto consiste em um chatbot completo para Discord, capaz de interagir de forma natural com usuários por meio
+    de comandos, menções diretas e um sistema dinâmico de perguntas frequentes.
+</p>
 
-## 🛠️ Tecnologias Utilizadas
+<p>
+    O foco do desenvolvimento está na <strong>clareza</strong>, <strong>personalização</strong> e
+    <strong>facilidade de manutenção</strong>, permitindo que administradores adaptem o bot à realidade do servidor
+    sem complexidade técnica excessiva.
+</p>
 
-- **Python 3.11+**
-- **discord.py** - Biblioteca para integração com Discord
-- **python-dotenv** - Gerenciamento de variáveis de ambiente
+<hr>
 
-## 🚀 Comandos Disponíveis
+<h2>✨ Funcionalidades</h2>
 
-| Comando | Descrição |
-|---------|-----------|
-| `!comandos` | Lista todos os comandos disponíveis |
-| `!faq` | Mostra as perguntas frequentes |
-| `!pergunta [texto]` | Faz uma pergunta ao bot |
-| `!adicionar_faq [pergunta] [resposta]` | Adiciona nova FAQ (apenas admins) |
+<ul>
+    <li>💬 Respostas automáticas para perguntas frequentes (FAQ)</li>
+    <li>🎯 Sistema de comandos customizáveis</li>
+    <li>🔔 Responde automaticamente quando mencionado</li>
+    <li>📝 Mensagens organizadas com embeds</li>
+    <li>🛡️ Controle de permissões para administradores</li>
+    <li>⚙️ FAQ dinâmico, atualizável em tempo real via comandos</li>
+</ul>
 
-## 📦 Como Usar
+<hr>
 
-### Pré-requisitos
+<h2>🛠️ Tecnologias Utilizadas</h2>
 
-- Python 3.8 ou superior
-- Conta no Discord Developer Portal
-- Token de bot do Discord
+<ul>
+    <li><strong>Python 3.11+</strong></li>
+    <li><strong>discord.py</strong> – Integração com a API do Discord</li>
+    <li><strong>python-dotenv</strong> – Gerenciamento seguro de variáveis de ambiente</li>
+</ul>
 
-### Instalação Local
+<hr>
 
-1. Clone o repositório
-```bash
-git clone https://github.com/SEU-USUARIO/chatbot-discord.git
-cd chatbot-discord
-```
+<h2>🚀 Comandos Disponíveis</h2>
 
-2. Crie um ambiente virtual
-```bash
-python3 -m venv venv
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Comando</th>
+            <th>Descrição</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>!comandos</code></td>
+            <td>Exibe todos os comandos disponíveis</td>
+        </tr>
+        <tr>
+            <td><code>!faq</code></td>
+            <td>Lista as perguntas frequentes</td>
+        </tr>
+        <tr>
+            <td><code>!pergunta [texto]</code></td>
+            <td>Envia uma pergunta ao bot</td>
+        </tr>
+        <tr>
+            <td><code>!adicionar_faq [pergunta] [resposta]</code></td>
+            <td>Adiciona uma nova FAQ (somente administradores)</td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h2>📦 Como Usar</h2>
+
+<h3>Pré-requisitos</h3>
+
+<ul>
+    <li>Python 3.8 ou superior</li>
+    <li>Conta no Discord Developer Portal</li>
+    <li>Token de bot do Discord</li>
+</ul>
+
+<h3>Instalação Local</h3>
+
+<ol>
+    <li>
+        Clone o repositório:
+        <pre><code>git clone https://github.com/ArgussNik/chatbot-discord.git
+cd chatbot-discord</code></pre>
+    </li>
+
+    <li>
+        Crie e ative um ambiente virtual:
+        <pre><code>python3 -m venv venv
 source venv/bin/activate  # Linux/Mac
-# ou
-venv\Scripts\activate  # Windows
-```
+venv\Scripts\activate     # Windows</code></pre>
+    </li>
 
-3. Instale as dependências
-```bash
-pip install -r requirements.txt
-```
+    <li>
+        Instale as dependências:
+        <pre><code>pip install -r requirements.txt</code></pre>
+    </li>
 
-4. Configure as variáveis de ambiente
+    <li>
+        Configure as variáveis de ambiente:
+        <pre><code>DISCORD_BOT_TOKEN=seu_token_aqui</code></pre>
+    </li>
 
-Crie um arquivo `.env` na raiz do projeto:
-```env
-DISCORD_BOT_TOKEN=seu_token_aqui
-```
+    <li>
+        Execute o bot:
+        <pre><code>python discord_bot.py</code></pre>
+    </li>
+</ol>
 
-5. Execute o bot
-```bash
-python discord_bot.py
-```
+<hr>
 
-## 🌐 Deploy no Render
+<h2>🌐 Deploy no Render</h2>
 
-Este bot está configurado para deploy automático no Render.
+<ol>
+    <li>Faça fork do repositório</li>
+    <li>Crie uma conta em <a href="https://render.com" target="_blank">https://render.com</a></li>
+    <li>Crie um novo Web Service</li>
+    <li>Conecte seu repositório do GitHub</li>
+    <li>Adicione a variável de ambiente <code>DISCORD_BOT_TOKEN</code></li>
+    <li>Inicie o deploy</li>
+</ol>
 
-1. Faça fork deste repositório
-2. Crie uma conta no [Render](https://render.com)
-3. Crie um novo Web Service
-4. Conecte seu repositório GitHub
-5. Adicione a variável de ambiente `DISCORD_BOT_TOKEN`
-6. Deploy automático!
+<hr>
 
-## 🎨 Personalização
+<h2>🎨 Personalização</h2>
 
-Para adicionar novas respostas, edite o dicionário `FAQ` em `discord_bot.py`:
-```python
-FAQ = {
+<p>
+    As respostas do bot são controladas por um dicionário de FAQ no arquivo
+    <code>discord_bot.py</code>:
+</p>
+
+<pre><code>FAQ = {
     'sua_pergunta': 'Sua resposta aqui',
     'exemplo': 'Exemplo de resposta',
-    # Adicione mais perguntas aqui
-}
-```
+}</code></pre>
 
-## 📝 Estrutura do Projeto
-```
-chatbot-discord/
-├── discord_bot.py          # Código principal do bot
-├── requirements.txt        # Dependências do projeto
-├── runtime.txt            # Versão do Python para Render
-├── .env.example           # Exemplo de variáveis de ambiente
-├── .gitignore            # Arquivos ignorados pelo Git
-└── README.md             # Documentação do projeto
-```
+<hr>
 
-## 🤝 Contribuindo
+<h2>📝 Estrutura do Projeto</h2>
 
-Contribuições são bem-vindas! Sinta-se à vontade para:
+<pre><code>chatbot-discord/
+├── discord_bot.py
+├── requirements.txt
+├── runtime.txt
+├── .env.example
+├── .gitignore
+└── README.md</code></pre>
 
-1. Fazer fork do projeto
-2. Criar uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/MinhaFeature`)
-5. Abrir um Pull Request
+<hr>
 
-## 📄 Licença
+<h2>📄 Licença</h2>
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+<p>
+    Este projeto está sob a <strong>MIT License</strong>.
+    Consulte o arquivo <code>LICENSE</code> para mais detalhes.
+</p>
 
-## 👤 Autor
+<hr>
 
-**Seu Nome**
+<h2>👤 Autor</h2>
 
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Nome](https://linkedin.com/in/seu-perfil)
+<p><strong>Nicolas Henrique dos Santos de Lima</strong></p>
 
-## 🙏 Agradecimentos
+<ul>
+    <li>GitHub: <a href="https://github.com/ArgussNik" target="_blank">@ArgussNik</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/nicollas-lima/" target="_blank">Nicollas Lima</a></li>
+</ul>
 
-- Discord.py pela excelente biblioteca
-- Comunidade Python
-- Anthropic Claude pela assistência no desenvolvimento
+<p>⭐ Se este projeto foi útil, considere deixar uma estrela no repositório.</p>
 
----
-
-⭐ Se este projeto foi útil para você, considere dar uma estrela!
+</body>
+</html>
