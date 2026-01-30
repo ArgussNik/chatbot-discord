@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Chatbot Discord com Respostas Inteligentes</title>
+    <title>Chatbot Discord</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -73,7 +73,7 @@
             <td>Lista as perguntas frequentes</td>
         </tr>
         <tr>
-            <td><code>!pergunta [texto]</code></td>
+            <td><code>!question [texto]</code></td>
             <td>Envia uma pergunta ao bot</td>
         </tr>
         <tr>
