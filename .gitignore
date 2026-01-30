@@ -1,0 +1,33 @@
+# Ambientes virtuais
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+# Variáveis de ambiente - NUNCA commitar!
+.env
+.env*
+*.env
+.envbot
